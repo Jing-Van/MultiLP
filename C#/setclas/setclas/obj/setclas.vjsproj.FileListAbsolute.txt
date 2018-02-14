@@ -1,0 +1,5 @@
+E:\project\setclas\setclas\bin\Debug\setclas.exe
+E:\project\setclas\setclas\bin\Debug\setclas.pdb
+E:\project\setclas\setclas\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\project\setclas\setclas\obj\x86\Debug\setclas.exe
+E:\project\setclas\setclas\obj\x86\Debug\setclas.pdb

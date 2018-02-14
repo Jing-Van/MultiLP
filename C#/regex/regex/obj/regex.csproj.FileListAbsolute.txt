@@ -1,0 +1,5 @@
+E:\project\regex\regex\obj\Debug\ResolveAssemblyReference.cache
+E:\project\regex\regex\bin\Debug\regex.exe
+E:\project\regex\regex\bin\Debug\regex.pdb
+E:\project\regex\regex\obj\Debug\regex.exe
+E:\project\regex\regex\obj\Debug\regex.pdb

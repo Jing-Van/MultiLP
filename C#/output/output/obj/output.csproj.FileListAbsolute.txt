@@ -1,0 +1,5 @@
+E:\project\output\output\obj\Debug\output.exe
+E:\project\output\output\bin\Debug\output.exe
+E:\project\output\output\bin\Debug\output.pdb
+E:\project\output\output\obj\Debug\ResolveAssemblyReference.cache
+E:\project\output\output\obj\Debug\output.pdb

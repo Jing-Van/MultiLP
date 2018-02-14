@@ -1,0 +1,5 @@
+E:\project\setclass\setclass\obj\Debug\ResolveAssemblyReference.cache
+E:\project\setclass\setclass\bin\Debug\setclass.exe
+E:\project\setclass\setclass\bin\Debug\setclass.pdb
+E:\project\setclass\setclass\obj\Debug\setclass.exe
+E:\project\setclass\setclass\obj\Debug\setclass.pdb

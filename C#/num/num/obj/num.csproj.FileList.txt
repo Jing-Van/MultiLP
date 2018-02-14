@@ -1,0 +1,5 @@
+obj\Debug\num.exe
+obj\Debug\num.pdb
+bin\Debug\num.exe
+bin\Debug\num.pdb
+obj\Debug\ResolveAssemblyReference.cache

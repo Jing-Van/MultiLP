@@ -1,0 +1,5 @@
+E:\project\lastline\lastline\obj\Debug\lastline.exe
+E:\project\lastline\lastline\obj\Debug\lastline.pdb
+E:\project\lastline\lastline\bin\Debug\lastline.exe
+E:\project\lastline\lastline\bin\Debug\lastline.pdb
+E:\project\lastline\lastline\obj\Debug\ResolveAssemblyReference.cache

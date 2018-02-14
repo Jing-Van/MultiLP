@@ -1,0 +1,46 @@
+function   meizz(a,   b,   n)   
+  {   
+          var   c=a.length>b.length?b:a;   
+          if(b==c)   b=a;   a=c;   //少做些循环   
+          if(!n)   n=1;   
+          var   mm   =   new   Array();   
+          for(var   i=0;   i<a.length;   i++)   
+          {   
+                  for(var   j=i+n;   j<=a.length;   j++)   
+                  {   
+                          var   s   =   a.substring(i,   j);   
+                          if(b.indexOf(s)==-1)   
+                          {   
+                                  if(s.length>n)   
+                                  {   
+                                          mm[mm.length]   =   a.substring(i,   j-1);   
+                                          i   =   j-2;   
+                                  }   
+                                  break;   
+                          }   
+                          else   
+                          {   
+                                  if(j==a.length)   
+                                  {   
+                                          mm[mm.length]=s;   
+                                  }   
+                          }   
+                  }   
+                    
+          }   
+          return   mm.Unique().join(",");   //去除数组里的重复项   
+          //return   mm.join(",");   
+  }   
+    
+  Array.prototype.Unique   =   function()   
+  {   
+      var   a   =   {};   for(var   i=0;   i<this.length;   i++)   
+      {   
+          if(typeof   a[this[i]]   ==   "undefined")   
+              a[this[i]]   =   1;   
+      }   
+      this.length   =   0;   
+      for(var   i   in   a)   
+          this[this.length]   =   i;   
+      return   this;   
+  };   

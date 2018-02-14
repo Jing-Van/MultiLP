@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\alpha.exe
+bin\Debug\alpha.pdb
+obj\Debug\alpha.exe
+obj\Debug\alpha.pdb

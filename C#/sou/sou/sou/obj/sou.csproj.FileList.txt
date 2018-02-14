@@ -1,0 +1,5 @@
+bin\Debug\sou.exe
+bin\Debug\sou.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\sou.exe
+obj\Debug\sou.pdb

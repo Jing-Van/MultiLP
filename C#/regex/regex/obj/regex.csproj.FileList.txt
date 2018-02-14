@@ -1,0 +1,5 @@
+obj\Debug\regex.exe
+obj\Debug\regex.pdb
+bin\Debug\regex.exe
+bin\Debug\regex.pdb
+obj\Debug\ResolveAssemblyReference.cache

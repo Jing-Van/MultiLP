@@ -1,0 +1,119 @@
+﻿import java.io.BufferedReader;   
+import java.io.FileInputStream;   
+import java.io.InputStreamReader;   
+import java.util.HashSet;   
+import java.util.Set;
+import java.util.Iterator;
+import java.io.*;
+  
+/**  
+ * 两个文件a.txt和b.txt, 去掉相同的行, 即交集  
+ *   
+ * @author zhanjia  
+ *  
+ */  
+public class TestSet {   
+  
+    /**  
+     * @param args  
+     */  
+    public static void main(String[] args) {   
+        String file1 = "E:/project/setclas/ck1.txt";   
+        String file2 = "E:/project/setclas/ck2.txt";
+        Set set1 = new HashSet();   
+        Set set11 = new HashSet();   
+        Set set2 = new HashSet();   
+           
+        BufferedReader br1 = null;   
+        BufferedReader br2 = null;
+		
+		           
+        try {
+			
+			br1 = new BufferedReader(new InputStreamReader(new FileInputStream(file1)));   
+            br2 = new BufferedReader(new InputStreamReader(new FileInputStream(file2)));
+			//br12 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file12)));
+
+            String line1 = null;   
+            String line2 = null;   
+            while ((line1 = br1.readLine()) != null) {   
+                set1.add(line1);   
+                set11.add(line1);   
+            }   
+            while ((line2 = br2.readLine()) != null) {   
+                set2.add(line2);   
+            }   
+               
+            //set11.retainAll(set2);   
+            //System.out.println("交集: " + set11);
+			
+            //set1.removeAll(set11);   
+            //System.out.println(set1);
+			//BufferedWriter br12 = new BufferedWriter(new FileWriter("E:/project/setclas/ck12.txt"));
+			//br12.write(set1.toString());
+		
+            set2.removeAll(set11);
+			FileWriter out = new FileWriter("E:/project/setclas/ck12.txt");
+			//out.write(set2.toString().toCharArray());
+			Iterator p = set2.iterator();
+			while (p.hasNext()) {
+				out.write(p.next().toString()+"\r\n");
+			}
+			
+			out.close();
+			//out.write(set2.toString().Split(",");
+            //System.out.println("set2去掉交集: " + set2);  
+			//BufferedWriter br12 = new BufferedWriter(new FileWriter("E:/project/setclas/ck12.txt"));
+			
+			//br12.write(set2.toString());
+			
+        } catch (Exception e) {   
+            try {   
+                br1.close();   
+                br2.close();
+				BufferedWriter br12 = new BufferedWriter(new FileWriter("E:/project/setclas/ck12.txt"));
+				br12.close();
+            } catch (Exception ce) {   
+            }   
+        }   
+           
+    }   
+  
+}  
+/*
+public class Test{
+public static void main(String[] args)
+{
+try {
+BufferedWriter bw = new BufferedWriter(new FileWriter("data.txt"));
+//文件将会创建在程序所在的文件夹中，
+//("data.txt")也可以加上路径，如：("C:\\data.txt"),这样就会在C盘根目录创建一个data.txt文件
+BufferedOutputStream out=new BufferedOutputStream(new FileOutputStream("data2.txt"));
+DataOutputStream dout=new DataOutputStream(new BufferedOutputStream(new FileOutputStream("data3.txt")));
+PrintStream pout=new PrintStream(new BufferedOutputStream(new FileOutputStream("data4.txt")));
+RandomAccessFile rout=new RandomAccessFile("data5.txt","rw");//"rw"表示此文件可读可写
+//设置文本内容
+StringBuilder sb=new StringBuilder("");
+sb.append("How are you?"+"\r\n");
+sb.append("Fine,thanks,and you?"+"\r\n");
+sb.append("Fine,too.");
+String a=sb.toString();
+byte[] b=(a).getBytes();
+//写入文件，还可以用其他方法如：write(String str)
+bw.write(a,0,b.length);
+out.write(b, 0, b.length);
+dout.write(b, 0, b.length);
+pout.write(b, 0, b.length);
+rout.write(b, 0, b.length);
+//关闭流
+out.close();
+bw.close();
+dout.close();
+pout.close();
+rout.close();
+} catch (IOException ex) {
+System.out.println(ex);
+}
+}
+}
+*/
